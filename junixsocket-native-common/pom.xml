@@ -5,10 +5,10 @@
   <artifactId>junixsocket-native-common</artifactId>
   <packaging>jar</packaging>
   <parent>
-    <groupId>com.kohlschutter.junixsocket</groupId>
+    <groupId>com.cosium.junixsocket</groupId>
     <artifactId>junixsocket-parent</artifactId>
     <!-- Update this manually after maven-release -->
-    <version>2.0.4</version>
+    <version>2.0.4.1.cos-fork-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <name>junixsocket-native-common</name>
@@ -29,7 +29,7 @@
             <configuration>
               <artifactSet>
                 <includes>
-                  <include>com.kohlschutter.junixsocket:junixsocket-native</include>
+                  <include>com.cosium.junixsocket:junixsocket-native</include>
                 </includes>
               </artifactSet>
               <promoteTransitiveDependencies>true</promoteTransitiveDependencies>
@@ -47,12 +47,12 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>com.kohlschutter.junixsocket</groupId>
+      <groupId>com.cosium.junixsocket</groupId>
       <artifactId>junixsocket-common</artifactId>
       <version>${project.parent.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.kohlschutter.junixsocket</groupId>
+      <groupId>com.cosium.junixsocket</groupId>
       <artifactId>junixsocket-native</artifactId>
       <version>${project.version}</version>
       <type>nar</type>
@@ -71,7 +71,7 @@
       </activation>
       <dependencies>
         <dependency>
-          <groupId>com.kohlschutter.junixsocket</groupId>
+          <groupId>com.cosium.junixsocket</groupId>
           <artifactId>junixsocket-native</artifactId>
           <version>${project.version}</version>
           <type>nar</type>
@@ -89,7 +89,7 @@
       </activation>
       <dependencies>
         <dependency>
-          <groupId>com.kohlschutter.junixsocket</groupId>
+          <groupId>com.cosium.junixsocket</groupId>
           <artifactId>junixsocket-native</artifactId>
           <version>${project.version}</version>
           <type>nar</type>
@@ -101,14 +101,14 @@
       <id>release</id>
       <dependencies>
         <dependency>
-          <groupId>com.kohlschutter.junixsocket</groupId>
+          <groupId>com.cosium.junixsocket</groupId>
           <artifactId>junixsocket-native</artifactId>
           <version>${project.version}</version>
           <type>nar</type>
           <classifier>x86_64-MacOSX-gpp-jni</classifier>
         </dependency>
         <dependency>
-          <groupId>com.kohlschutter.junixsocket</groupId>
+          <groupId>com.cosium.junixsocket</groupId>
           <artifactId>junixsocket-native</artifactId>
           <version>${project.version}</version>
           <type>nar</type>
